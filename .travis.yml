@@ -18,6 +18,7 @@ addons:
 
 script:
   - yarn build
+  - ls -lh build
 
 after_success:
-  - bash deploy.sh
+  - bash bind/deploy.sh
