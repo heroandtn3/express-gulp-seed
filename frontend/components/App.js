@@ -1,11 +1,14 @@
 import React from 'react';
-import './App.less';
+import Footer from './Footer';
+import AddTodo from '../containers/AddTodo';
+import VisibleTodoList from '../containers/VisibleTodoList';
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <div className="App">
-        <h1>Hello World!!!!</h1>
-      </div>);
-  }
-}
+const App = () => (
+  <div>
+    <AddTodo />
+    <VisibleTodoList />
+    <Footer />
+  </div>
+);
+
+export default App;
