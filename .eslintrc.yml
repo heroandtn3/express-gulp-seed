@@ -21,3 +21,10 @@ rules:
   no-extend-native: 1
   no-shadow: 0
   no-console: 0
+  comma-dangle: ["error", {
+    "arrays": "always-multiline",
+    "objects": "always-multiline",
+    "imports": "always-multiline",
+    "exports": "always-multiline",
+    "functions": "ignore",
+  }]

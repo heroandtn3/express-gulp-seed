@@ -11,5 +11,5 @@ render(
   <Provider store={store}>
     <App />
   </Provider>,
-  window.document.getElementById('root') // eslint-disable-line
+  window.document.getElementById('root')
 );
