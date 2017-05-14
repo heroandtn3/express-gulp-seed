@@ -17,8 +17,7 @@ addons:
       - g++-4.8
 
 script:
-  - yarn build
-  - ls -lh build
+  - yarn build && ls -lh build
 
 after_success:
-  - bash bind/deploy.sh
+  - bash bin/deploy.sh
