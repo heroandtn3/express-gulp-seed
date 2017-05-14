@@ -1,0 +1,26 @@
+{
+  "name": "react-express-seed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "backend/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.15.2",
+    "express": "4.14.0",
+    "mongoose": "4.6.7",
+    "morgan": "1.7.0",
+    "q": "1.4.1"
+  },
+  "devDependencies": {
+    "eslint": "3.10.0",
+    "eslint-config-airbnb-base": "10.0.1",
+    "eslint-plugin-import": "2.2.0",
+    "gulp": "3.9.1",
+    "gulp-eslint": "3.0.1",
+    "gulp-nodemon": "2.2.1"
+  }
+}
