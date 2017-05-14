@@ -6,7 +6,7 @@ const inDevMode = process.env.NODE_ENV === 'development';
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: './frontend/index.html',
   filename: 'index.html',
-  inject: 'body'
+  inject: 'body',
 });
 
 const extractLess = new ExtractTextPlugin({
@@ -18,7 +18,7 @@ module.exports = {
   entry: './frontend/index.js',
   output: {
     path: path.resolve('build'),
-    filename: 'app.js'
+    filename: 'app.js',
   },
   module: {
     rules: [{
@@ -26,7 +26,7 @@ module.exports = {
       loader: 'babel-loader',
       exclude: /node_modules/,
       options: {
-        presets: ['es2015', 'react']
+        presets: ['es2015', 'react'],
       },
     }, {
       test: /\.less$/,
@@ -43,13 +43,13 @@ module.exports = {
           },
         }],
         // use style-loader in development
-        fallback: 'style-loader'
-      })
-    }]
+        fallback: 'style-loader',
+      }),
+    }],
   },
   devtool: 'source-map', // enum
   plugins: [
     HtmlWebpackPluginConfig,
     extractLess,
-  ]
+  ],
 };
