@@ -10,7 +10,7 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 });
 
 const extractLess = new ExtractTextPlugin({
-  filename: '[name].[contenthash].css',
+  filename: 'app.css',
   disable: inDevMode,
 });
 
@@ -47,7 +47,6 @@ module.exports = {
       }),
     }],
   },
-  devtool: 'source-map', // enum
   plugins: [
     HtmlWebpackPluginConfig,
     extractLess,

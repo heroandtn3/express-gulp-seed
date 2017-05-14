@@ -3,6 +3,8 @@ const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const storyRoutes = require('./api/story');
 
+const SERVER_PORT = Number(process.env.SERVER_PORT || 3000);
+
 const app = express();
 
 app.use(morgan('dev'));
@@ -19,8 +21,8 @@ app.use((req, res, next) => {
 app.use('/api/stories', storyRoutes);
 
 function start() {
-  app.listen(8080, () => {
-    console.log('AB server is listening on port 8080!');
+  app.listen(SERVER_PORT, () => {
+    console.log(`Server is listening on port ${SERVER_PORT}!`);
   });
 }
 
